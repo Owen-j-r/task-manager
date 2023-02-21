@@ -1,0 +1,30 @@
+Total numebr of users is 8.
+Total number of tasks is 11.
+admin has: 
+        5 tasks assigned to them, 
+        which is 45.5% of all of the tasks,
+        60.0% of admin's task have been completed,
+        40.0% must still be completed,
+        0.0% of this users task are overdue
+Owen has: 
+        4 tasks assigned to them, 
+        which is 36.4% of all of the tasks,
+        0.0% of Owen's task have been completed,
+        100.0% must still be completed,
+        75.0% of this users task are overdue
+Jess has 0 tasks assigned to them
+Danny has 0 tasks assigned to them
+Lori has 0 tasks assigned to them
+David has 0 tasks assigned to them
+Jack has: 
+        1 tasks assigned to them, 
+        which is 9.1% of all of the tasks,
+        0.0% of Jack's task have been completed,
+        100.0% must still be completed,
+        0.0% of this users task are overdue
+Kizzy has: 
+        1 tasks assigned to them, 
+        which is 9.1% of all of the tasks,
+        0.0% of Kizzy's task have been completed,
+        100.0% must still be completed,
+        0.0% of this users task are overdue
