@@ -1,24 +1,4 @@
-
-#NOTE: In order for to complete the parts of this code where i have to check if a task is 
-#      overdue or not i had to change the formats of the dates given in the first 2 example 
-#      tasks in the tasks.txt file.
-#      i wasnt sure how i could compare '20 oct 2019' to the date given by the datatime module
-#      as it is in the format YYYY-MM-DD, so had to change all the dates of tasks to be in the form
-#      YYYY-MM-DD, i hope this is okay
-#      So in order for code to work all dates must be in the form of YYYY-MM-DD, i have instructed
-#      the user to do this when adding new tasks so i hope it makes sense. 
-
-#      Also, in the tasks file, in order for a new task to be printed on a new line, the file must
-#     already have a blank line at the bottom, so for instance if there are 8 tasks in tasks.txt, the file 
-#     must have tasks on lines 1-8 then have a line 9 left blank, just so you (code reviewer) are aware.
-#     As in my code when adding a new task, '\n' is at the end of the task added, not at the beginning.
-#
-#     This is to take into account that if tasks.txt was completely blank (i.e has no tasks), that when
-#     the first task is added it is printed on line 1 and then prints '\n' so that line 2 is where
-#     the next task is added
-#
-#     Hope that all makes sense.
-# 
+ 
 # #=====importing libraries===========
 
 # Import date class from datetime module
@@ -207,8 +187,6 @@ def view_mine():
                         print(f'\nTask has user has now been updated to {new_task_user}')
 
                 #EDIT TASK DUE DATE _________________________________________
-                #I pretty much just copy and pasted the previous code for option a and changed it to new due date from new user
-                #same logic as before
 
                 elif edit_choice == 'b':
                     new_due_date = input("Enter the new due date of the task (in format YYYY-MM-DD): ")
@@ -242,9 +220,7 @@ def view_mine():
                 print("Can not edit task if it is already completed")
         else:
             print("invalid option selected")
-        #all if else statments above to account for user error handling
-        # im not sure if i should be using 'try/except' instead to do this but i personally prefer
-        # just to use if else statements instead. 
+
 #••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 # function to find all individual statistics about a specific user
 def user_info(user):
@@ -269,10 +245,6 @@ def user_info(user):
     f.close()
     
     # Finding if tasks is over due by comparing the due date to 'today's date from datetime module.
-    # I did this by just comparing each individual number in the date but i looked
-    # up online a simpler way to do this by simply comparing if 'date1'<'date2' but i couldnt
-    # manage to get it working, i will look further into how to use the datetime module more efficiently
-    # in the future.
 
     with open('tasks.txt','r') as f:
         for new_line in f:
@@ -351,8 +323,6 @@ with open("user.txt","r") as f:
     for line in f:
 
             #formatting data to remove spaces and \n.
-            #i tried using '.strip()' to remove the space but it wasnt working for some reason
-            #so i just used replace instead which worked
             line = line.replace(" ","").replace("\n","").split(",") 
             correct_unames.append(line[0])
             correct_pwords.append(line[1])
