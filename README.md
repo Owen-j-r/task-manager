@@ -11,7 +11,7 @@ This project is a simple task manager that allows users to manage tasks for a te
 * Display task and user statistics
 
 ### **Usage**
-1. Run the Python script task_manager.py.
+1. Run the Python script task_manager_all_stats.py.
 2. Log in with your username and password (use "admin" for the first time).
 3. Follow the prompts in the user menu to perform various actions.
 4. To exit the program, choose the 'e' option.
