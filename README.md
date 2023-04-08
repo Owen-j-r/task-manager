@@ -1,9 +1,11 @@
 # task manager
-Task Manager
+
 This project is a simple task manager that allows users to manage tasks for a team. It offers various functionalities such as registering users, adding tasks, viewing tasks, and generating reports.
 
-Features
+### **Features**
+
 User authentication and registration (admin only)
+
 Add new tasks
 View all tasks
 View tasks assigned to a specific user
